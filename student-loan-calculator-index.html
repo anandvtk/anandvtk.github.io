@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">/*! nouislider - 8.1.0 - 2015-10-25 16:05:44 */.noUi-target,.noUi-target *{-webkit-touch-callout:none;-webkit-user-select:none;-ms-touch-action:none;touch-action:none;-ms-user-select:none;-moz-user-select:none;-moz-box-sizing:border-box;box-sizing:border-box}.noUi-target{position:relative;direction:ltr}.noUi-base{width:100%;height:100%;position:relative;z-index:1}.noUi-origin{position:absolute;right:0;top:0;left:0;bottom:0}.noUi-handle{position:relative;z-index:1}.noUi-stacking .noUi-handle{z-index:10}.noUi-state-tap .noUi-origin{-webkit-transition:left .3s,top .3s;transition:left .3s,top .3s}.noUi-state-drag *{cursor:inherit!important}.noUi-base{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.noUi-horizontal{height:18px}.noUi-horizontal .noUi-handle{width:34px;height:28px;left:-17px;top:-6px}.noUi-vertical{width:18px}.noUi-vertical .noUi-handle{width:28px;height:34px;left:-6px;top:-17px}.noUi-background{background:#FAFAFA;box-shadow:inset 0 1px 1px #f0f0f0}.noUi-connect{background:#3FB8AF;box-shadow:inset 0 0 3px rgba(51,51,51,.45);-webkit-transition:background 450ms;transition:background 450ms}.noUi-origin{border-radius:2px}.noUi-target{border-radius:4px;border:1px solid #D3D3D3;box-shadow:inset 0 1px 1px #F0F0F0,0 3px 6px -5px #BBB}.noUi-target.noUi-connect{box-shadow:inset 0 0 3px rgba(51,51,51,.45),0 3px 6px -5px #BBB}.noUi-draggable{cursor:w-resize}.noUi-vertical .noUi-draggable{cursor:n-resize}.noUi-handle{border:1px solid #D9D9D9;border-radius:3px;background:#FFF;cursor:default;box-shadow:inset 0 0 1px #FFF,inset 0 1px 7px #EBEBEB,0 3px 6px -3px #BBB}.noUi-active{box-shadow:inset 0 0 1px #FFF,inset 0 1px 7px #DDD,0 3px 6px -3px #BBB}.noUi-handle:after,.noUi-handle:before{content:"";display:block;position:absolute;height:14px;width:1px;background:#E8E7E6;left:14px;top:6px}.noUi-handle:after{left:17px}.noUi-vertical .noUi-handle:after,.noUi-vertical .noUi-handle:before{width:14px;height:1px;left:6px;top:14px}.noUi-vertical .noUi-handle:after{top:17px}[disabled] .noUi-connect,[disabled].noUi-connect{background:#B8B8B8}[disabled] .noUi-handle,[disabled].noUi-origin{cursor:not-allowed}.noUi-pips,.noUi-pips *{-moz-box-sizing:border-box;box-sizing:border-box}.noUi-pips{position:absolute;color:#999}.noUi-value{width:40px;position:absolute;text-align:center}.noUi-value-sub{color:#ccc;font-size:10px}.noUi-marker{position:absolute;background:#CCC}.noUi-marker-large,.noUi-marker-sub{background:#AAA}.noUi-pips-horizontal{padding:10px 0;height:50px;top:100%;left:0;width:100%}.noUi-value-horizontal{margin-left:-20px;padding-top:20px}.noUi-value-horizontal.noUi-value-sub{padding-top:15px}.noUi-marker-horizontal.noUi-marker{margin-left:-1px;width:2px;height:5px}.noUi-marker-horizontal.noUi-marker-sub{height:10px}.noUi-marker-horizontal.noUi-marker-large{height:15px}.noUi-pips-vertical{padding:0 10px;height:100%;top:0;left:100%}.noUi-value-vertical{width:15px;margin-left:20px;margin-top:-5px}.noUi-marker-vertical.noUi-marker{width:5px;height:2px;margin-top:-1px}.noUi-marker-vertical.noUi-marker-sub{width:10px}.noUi-marker-vertical.noUi-marker-large{width:15px}.noUi-tooltip{display:block;position:absolute;border:1px solid #D9D9D9;border-radius:3px;background:#fff;padding:5px;left:-9px;text-align:center;width:50px}.noUi-handle-lower .noUi-tooltip{top:-32px}.noUi-handle-upper .noUi-tooltip{bottom:-32px}</style>
+<style type="text/css">@font-face{font-family:"TelesansTextWebRegular";src:url("http://s3.eip.telegraph.co.uk/assets/_fonts/Telesans Text Web-Regular.eot");src:url("http://s3.eip.telegraph.co.uk/assets/_fonts/Telesans Text Web-Regular.eot?#iefix") format("embedded-opentype"),url("http://s3.eip.telegraph.co.uk/assets/_fonts/Telesans Text Web-Regular.woff2") format("woff2"),url("http://s3.eip.telegraph.co.uk/assets/_fonts/Telesans Text Web-Regular.woff") format("woff"),url("http://s3.eip.telegraph.co.uk/assets/_fonts/Telesans Text Web-Regular.ttf") format("truetype"),url("http://s3.eip.telegraph.co.uk/assets/_fonts/Telesans Text Web-Regular.svg#svgFontName") format("svg")}body{font-family:"TelesansTextWebRegular","Helvetica Neue",Helvetica,Arial,sans-serif;margin:auto;position:relative;padding-top:50px;text-align:center}svg{-webkit-backface-visibility:visible;backface-visibility:visible}text{font:10px "TelesansTextWebRegular",arial,sans-serif}fieldset{border:0;margin:10px 0}.graph{min-height:200px;width:calc(100% - 20px);box-sizing:border-box;overflow-x:hidden}.debug-output{position:absolute;top:0;left:0;background-color:#eee;width:100%;padding:10px;box-sizing:border-box}.debug-output div{display:inline-block;margin-right:20px}.axis path,.axis line{fill:none;stroke:#000;shape-rendering:crispEdges}.debug{margin-top:20px}table{margin-bottom:20px}td{padding:0 20px}.controls{width:90%;margin:auto}.form-control{margin-bottom:22px}.sliders{background-color:#ddd;margin-bottom:12px;width:100%}.form-control-label{position:relative;text-align:left;margin-top:6px;margin-bottom:6px;text-transform:uppercase}.form-control-label label{position:relative;margin:0;padding:0;display:inline-block;font-size:11px}.form-control-label input{margin:0;display:inline-block;position:absolute;top:-6px;right:0;padding:4px;width:60px;min-width:60px;max-width:60px;display:block;font-size:12px;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px dashed #BBB;line-height:15px;background:0 0;outline:none}.noUi-target.noUi-connect{padding-left:16px}.noUi-target{border:none}.endSalary,.initialMonthly{font-size:9px;text-align:left;text-transform:uppercase;color:#888;-webkit-text-size-adjust:100%}rect{fill:#b10d18}path{fill:none}path,line{stroke:#ccc}rect.totalPaidBar{fill:#444}.totals text{font-size:11px;fill:#888}.totals .totalPaidLabel,.totals .totalPaidAmt{font-size:18px;fill:#666}.tick{fill:#666}.totalsBg{width:40%;fill:#fff;height:80px;y:-25px;x:-40px}.xAxisLabel{font-size:12px;fill:#666}@media screen and (min-width:375px){.endSalary,.initialMonthly{font-size:11px}.form-control-label label,.form-control-label input{font-size:13px}}@media screen and (min-width:400px){.form-control-label input{width:76px;min-width:76px;max-width:76px;font-size:15px}}</style>
+</head>
+
+<body>
+  <div class="graph">
+    <svg width="100%" height="250">
+      <g class="chart-wrapper" transform="translate(40,80)">
+        <g class="bars"></g>
+        <g class="x axis">
+          <text class="xAxisLabel" x="2" y="18">Years</text>
+        </g>
+        <g class="y axis"></g>
+        <g class="totals" transform="translate(0,-60)">
+          <rect class="totalsBg"></rect>
+          <text class="totalPaidLabel">Total PAID</text>
+          <text class="totalPaidAmt" x="140"></text>
+          <rect class="totalPaidBar" height="2" width="100" y="5"></rect>
+          <rect class="totalInterestBar" height="2" width="100" y="8"></rect>
+          <text class="totalInterestAmt" x="140" y="22"></text>
+          <text y="22" class="totalInterestPct"></text>
+          <text y="37" class="totalRemaining"></text>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="controls">
+
+    <section class="form-control">
+      <div class="form-control-label">
+        <label for="borrowOutput">Debt amount at graduation</label>
+        <input class="slider-input" type="text" min="0" max="100000" value="£40,000" step="1" id="borrowOutput"></input>
+      </div>
+      <div class="sliders" id="borrow" data-min="0" data-max="100000" data-value="40000" data-step="100" data-format="currency"></div>
+    </section>
+
+    <section class="form-control">
+      <div class="form-control-label">
+        <label for="salaryOutput">Starting Salary</label>
+        <input class="slider-input" type="text" min="0" max="100000" value="£20,000" step="1" id="salaryOutput"></input>
+      </div>
+      <div class="sliders" id="salary" data-min="0" data-max="100000" data-value="20000" data-step="100" data-format="currency"></div>
+    </section>
+
+    <section class="form-control">
+      <div class="form-control-label">
+        <label for="voluntaryOutput">Voluntary Monthly Repayment</label>
+        <input class="slider-input" type="text" min="0" max="600" value="£0" step="5" id="voluntaryOutput"></input>
+      </div>
+      <div class="sliders" id="voluntary" data-min="0" data-max="600" data-step="5" data-value="0" data-format="currency"></div>
+      <p class="initialMonthly">Initial compulsory monthly payment: <span class="initialMonthlyAmt"></span></p>
+    </section>
+
+    <section class="form-control">
+      <div class="form-control-label">
+        <label for="repaymentOutput">Repayment rate %</label>
+        <input class="slider-input" type="text" min="9" max="11" value="9.0%" step=".5" id="repaymentOutput"></input>
+      </div>
+      <div class="sliders" id="repayment" data-min="9" data-max="11" data-value="9.0" data-step=".1" data-format="percent"></div>
+    </section>
+
+    <section class="form-control">
+      <div class="form-control-label">
+        <label for="salaryRiseOutput">Salary Rise rate %</label>
+        <input class="slider-input" type="text" min="0" max="12" value="3.5%" step=".1" id="salaryRiseOutput"></input>
+      </div>
+      <div class="sliders" id="salaryRise" data-min="0" data-max="12" data-value="3.5" data-format="percent"></div>
+      <p class="endSalary">Salary rising to <span class="endSalaryAmt"></span></p>
+    </section>
+
+  </div>
+
+  <!-- <div class="monthly-debug-output"> -->
+
+  </div>
+
+  <script src="http://s3.eip.telegraph.co.uk/student-loan-calculator/js/vendor/wNumb.js"></script>
+  <script src="http://s3.eip.telegraph.co.uk/student-loan-calculator/js/vendor/nouislider.min.js"></script>
+  <script src="http://s3.eip.telegraph.co.uk/student-loan-calculator/js/vendor/underscore-min.js"></script>
+  <script src="http://s3.eip.telegraph.co.uk/student-loan-calculator/js/vendor/d3.min.js"></script>
+
+
+  <script>!function(t,e,n,a){function r(){S=e.scale.ordinal().domain(e.range(I)).rangeRoundBands([0,q],.05),yScale=e.scale.linear().domain([0,N]).range([z,0]),xAxisComponent=e.svg.axis().scale(S).tickSize(5).tickPadding(6).tickFormat(function(t){return t%5===4?t+1:""}).orient("bottom"),H.attr("transform","translate(0,"+z+")"),yAxisComponent=e.svg.axis().scale(yScale).tickPadding(5).tickFormat(function(t){return 0===t?"0":"£"+t/1e3+"k"}).orient("left"),J.call(yAxisComponent),P=e.scale.linear().domain([0,w-1]).range(["#b10d18","#556"])}function i(){q=parseInt(e.select(".graph").style("width")),e.select(".graph svg").attr("width",q),o(),l(),c(),u(),s(B[0].endSalary),m(B[0].initialMonthly)}function o(){var t=q-E.left;S.rangeBands([0,t],.04),yScale.domain([0,Math.max(N,2e4)]).range([z,0])}function l(){H.transition().duration(500).ease("cubic-out").call(xAxisComponent),J.transition().duration(500).ease("cubic-out").call(yAxisComponent)}function c(){var t=L.selectAll("rect").data(U[0].map(function(t){return t}));t.enter().append("rect"),t.exit().remove(),t.transition().duration(500).ease("cubic-out").attr("x",function(t,e){return S(t.x)}).attr("width",S.rangeBand()).attr("y",function(t){return yScale(t.y0+t.y)}).attr("height",function(t){return yScale(t.y0)-yScale(t.y0+t.y)})}function u(){O.attr("width",q-E.left),D.data(B).transition().duration(500).ease("cubic-out").attr("width",function(t){return q*t.pctInterest}),T.data(B).text(function(t){return t.totalPaid}),_.data(B).text(function(t){return t.totalInterest}),j.data(B).text(function(t){return parseInt(100*t.pctInterest)+"% IS INTEREST"}),G.data(B).text(function(t){return t.message})}function s(t){e.select(".endSalaryAmt").text(t)}function m(t){e.select(".initialMonthlyAmt").text(t)}function d(){e.select(t).on("resize",i)}function y(t){var e;switch(t){case"currency":e=K;break;case"percent":e=Q}return e}function f(){for(var t=document.getElementsByClassName("slider-input"),e=0;e<t.length;e++)t[e].addEventListener("change",n.bind(X,t[e]))}function h(){v=document.getElementsByClassName("sliders");for(var t,e=0;e<v.length;e++)t=v[e],noUiSlider.create(t,{start:Number(t.getAttribute("data-value")),step:Number(t.getAttribute("data-step")),behaviour:"none",connect:"lower",range:{min:Number(t.getAttribute("data-min")),max:Number(t.getAttribute("data-max"))},format:y(t.getAttribute("data-format"))}),t.noUiSlider.on("slide",n.bind(W,t))}function p(){var t,e=[];n(30).times(function(a){t=0===a?n.clone(A):e[a-1],e.push(g(t,a))});var a=n.first(e).balance;return n(e).map(function(t,e){var r,i=[];return n(12).times(function(n){if(a>0){r=a*t.monthlyAPR,a+=r-t.monthlyPayment;var o=r,l=t.monthlyPayment;if(0>a){var c=a;l+=c,a=0}i.push({year:e,month:n+1,paid:l,interest:o,balance:a})}}),t.monthlys=i,t.paid=n.reduce(i,function(t,e){return t+e.paid},0),t.interest=n.reduce(i,function(t,e){return t+e.interest},0),t.balance=a,t}),e}function g(t,e){var a=n.clone(t);e>0&&(a.salary+=a.salary*a.salaryRise),a.monthlySalary=a.salary/12;var r=Math.max(.009,Math.min(.039,(3*((a.salary-21e3)/2e4)+.9)/100));return a.APR=r,a.monthlyAPR=r/12,a.monthlyPayment=(a.monthlySalary-1750)*a.repaymentRate,a.monthlyPayment<0&&(a.monthlyPayment=0),a.monthlyPaymentCompulsory=a.monthlyPayment,a.monthlyPayment+=a.voluntary,a.monthlyInterest=a.balance*a.monthlyAPR,a}function b(t){return t.map(function(t,e){return{x:e,y:Math.max(0,t.balance)}})}function x(t){var a=e.format(",.0f"),r=n.reduce(t,function(t,e){return t+e.paid},0),i=n.reduce(t,function(t,e){return t+e.interest},0),o=0===r?0:Math.min(1,i/r);i>r&&(i=r);var l,c=n.last(t).balance;if(c>0)l="Balance of £"+a(Math.round(c))+" will be cancelled after 30 years.";else{var u=n.findIndex(t,{balance:0})+1;l="Loan paid in full in year "+u}return[{totalPaid:"£"+a(Math.round(r)),totalInterest:"£"+a(Math.round(i)),pctInterest:o,endSalary:"£"+a(n.last(t).salary),initialMonthly:"£"+a(n.first(t).monthlyPaymentCompulsory),message:l}]}var v,S,P,A={borrow:4e4,balance:4e4,salary:18e3,repaymentRate:.09,voluntary:0,salaryRise:.035,annualAdded:0,yearlyPayment:0},w=1,I=30,R=parseInt(e.select(".graph").style("width")),M=200,k=e.layout.stack(),C=p(),U=k(e.range(w).map(function(){return b(C)})),B=x(C),N=e.max(U,function(t){return e.max(t,function(t){return t.y0+t.y})}),E={top:40,right:10,bottom:20,left:40},q=R-E.left-E.right,z=M-E.top-E.bottom,F=e.select("svg g.chart-wrapper"),L=F.select(".bars"),O=F.select(".totalPaidBar"),T=F.select(".totalPaidAmt"),_=F.select(".totalInterestAmt"),j=F.select(".totalInterestPct"),D=F.select(".totalInterestBar"),G=F.select(".totalRemaining"),H=F.select(".x.axis"),J=F.select(".y.axis"),K=a({decimals:0,mark:".",thousand:",",prefix:"£",postfix:""}),Q=a({decimals:1,mark:".",thousand:",",prefix:"",postfix:"%"}),V=function(){A.borrow=K.from(v[0].noUiSlider.get()),A.salary=K.from(v[1].noUiSlider.get()),A.balance=A.borrow,A.voluntary=K.from(v[2].noUiSlider.get()),A.repaymentRate=Q.from(v[3].noUiSlider.get())/100,A.salaryRise=Q.from(v[4].noUiSlider.get())/100,Y()},W=function(t,e){var n=t[e];document.querySelector("#"+this.id+"Output").value=n,document.querySelector("#"+this.id).noUiSlider.set(n),V()},X=function(){var t=this.value;document.querySelector("#"+this.id.replace("Output","")).noUiSlider.set(t),V()},Y=n.throttle(function(){C=p(),U=k(e.range(w).map(function(){return b(C)})),B=x(C),N=e.max(U,function(t){return e.max(t,function(t){return t.y0+t.y})}),i()},300);r(),i(),d(),f(),h()}(window,d3,_,wNumb);</script>
+
+
+</body>
+</html>
