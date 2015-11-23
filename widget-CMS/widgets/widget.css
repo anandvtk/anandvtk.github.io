@@ -1,0 +1,464 @@
+/* Local copies of fonts */
+@font-face {
+	font-family: 'widgetFontHeading';
+	src: url('../fonts/Austin News Deck Web-Roman.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'widgetFontHeading';
+	src: url('../fonts/Austin News Deck Web-Semibold.woff') format('woff');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'widgetFontHeading';
+	src: url('../fonts/Austin News Deck Web-Medium Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'widgetFontBody';
+	src: url('../fonts/Telesans Text Web-Regular.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'widgetFontBody';
+	src: url('../fonts/Telesans Text Web-Bold.woff') format('woff');
+	font-weight: 700;
+}
+
+/* Fonts LIVE */
+/*
+@font-face {
+	font-family: 'widgetFontHeading';
+	src: url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Roman.woff2") format("woff2"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Roman.woff") format("woff"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Roman.ttf") format("truetype"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Roman.eot"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Roman.svg") format("svg"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Roman.eot?#iefix") format("embedded-opentype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'widgetFontHeading';
+	src: url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Semibold.woff2") format("woff2"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Semibold.woff") format("woff"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Semibold.ttf") format("truetype"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Semibold.eot"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Semibold.svg") format("svg"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Semibold.eot?#iefix") format("embedded-opentype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'widgetFontHeading';
+	src: url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Medium Italic.woff2") format("woff2"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Medium Italic.woff") format("woff"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Medium Italic.ttf") format("truetype"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Medium Italic.eot"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Medium Italic.svg") format("svg"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Austin News Deck Web Fonts/Austin News Deck Web-Medium Italic.eot?#iefix") format("embedded-opentype");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'widgetFontBody';
+	src: url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Regular.woff2") format("woff2"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Regular.woff") format("woff"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Regular.ttf") format("truetype"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Regular.eot"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Regular.svg") format("svg"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Regular.eot?#iefix") format("embedded-opentype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'widgetFontBody';
+	src: url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Bold.woff2") format("woff2"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Bold.woff") format("woff"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Bold.ttf") format("truetype"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Bold.eot"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Bold.svg") format("svg"),url("http://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/tmgchannels/_base/fonts/_full/Telesans/Telesans Text Web-Bold.eot?#iefix") format("embedded-opentype");
+	font-weight: 700;
+}
+*/
+
+
+/* Colour themes */
+/* Default */
+[data-widget-section=""] .color0, .color0 { color: #444444; }
+[data-widget-section=""] .color1, .color1 { color: #5F5F5F; }
+[data-widget-section=""] .color2, .color2 { color: #797979; }
+[data-widget-section=""] .color3, .color3 { color: #949494; }
+[data-widget-section=""] .color4, .color4 { color: #AFAFAF; }
+[data-widget-section=""] .color5, .color5 { color: #C9C9C9; }
+[data-widget-section=""] .color6, .color6 { color: #e4e4e4; }
+[data-widget-section=""] .colorHighlight, .colorHighlight { color: #990000; }
+[data-widget-section=""] .background0, .background0 { background-color: #444444; }
+[data-widget-section=""] .background1, .background1 { background-color: #5F5F5F; }
+[data-widget-section=""] .background2, .background2 { background-color: #797979; }
+[data-widget-section=""] .background3, .background3 { background-color: #949494; }
+[data-widget-section=""] .background4, .background4 { background-color: #AFAFAF; }
+[data-widget-section=""] .background5, .background5 { background-color: #C9C9C9; }
+[data-widget-section=""] .background6, .background6 { background-color: #e4e4e4; }
+[data-widget-section=""] .backgroundHighlight, .backgroundHighlight { background-color: #990000; }
+[data-widget-section=""] .border0, .border0 { border-color: #444444; }
+[data-widget-section=""] .border1, .border1 { border-color: #5F5F5F; }
+[data-widget-section=""] .border2, .border2 { border-color: #797979; }
+[data-widget-section=""] .border3, .border3 { border-color: #949494; }
+[data-widget-section=""] .border4, .border4 { border-color: #AFAFAF; }
+[data-widget-section=""] .border5, .border5 { border-color: #C9C9C9; }
+[data-widget-section=""] .border6, .border6 { border-color: #e4e4e4; }
+[data-widget-section=""] .borderHighlight, .borderHighlight { border-color: #990000; }
+/* News */
+[data-widget-section="0"] .color0 { color: #1f5373; }
+[data-widget-section="0"] .color1 { color: #386d87; }
+[data-widget-section="0"] .color2 { color: #5c93a3; }
+[data-widget-section="0"] .color3 { color: #81b9c0; }
+[data-widget-section="0"] .color4 { color: #99d3d3; }
+[data-widget-section="0"] .color5 { color: #BFE4E4; }
+[data-widget-section="0"] .color6 { color: #e5f4f4; }
+[data-widget-section="0"] .colorHighlight { color: #9f1447; }
+[data-widget-section="0"] .background0 { background-color: #1f5373; }
+[data-widget-section="0"] .background1 { background-color: #386d87; }
+[data-widget-section="0"] .background2 { background-color: #5c93a3; }
+[data-widget-section="0"] .background3 { background-color: #81b9c0; }
+[data-widget-section="0"] .background4 { background-color: #99d3d3; }
+[data-widget-section="0"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="0"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="0"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="0"] .border0 { border-color: #1f5373; }
+[data-widget-section="0"] .border1 { border-color: #386d87; }
+[data-widget-section="0"] .border2 { border-color: #5c93a3; }
+[data-widget-section="0"] .border3 { border-color: #81b9c0; }
+[data-widget-section="0"] .border4 { border-color: #99d3d3; }
+[data-widget-section="0"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="0"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="0"] .borderHighlight { border-color: #9f1447; }
+/* Sport */
+[data-widget-section="1"] .color0 { color: #1f5373; }
+[data-widget-section="1"] .color1 { color: #386d87; }
+[data-widget-section="1"] .color2 { color: #5c93a3; }
+[data-widget-section="1"] .color3 { color: #81b9c0; }
+[data-widget-section="1"] .color4 { color: #99d3d3; }
+[data-widget-section="1"] .color5 { color: #BFE4E4; }
+[data-widget-section="1"] .color6 { color: #e5f4f4; }
+[data-widget-section="1"] .colorHighlight { color: #9f1447; }
+[data-widget-section="1"] .background0 { background-color: #1f5373; }
+[data-widget-section="1"] .background1 { background-color: #386d87; }
+[data-widget-section="1"] .background2 { background-color: #5c93a3; }
+[data-widget-section="1"] .background3 { background-color: #81b9c0; }
+[data-widget-section="1"] .background4 { background-color: #99d3d3; }
+[data-widget-section="1"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="1"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="1"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="1"] .border0 { border-color: #1f5373; }
+[data-widget-section="1"] .border1 { border-color: #386d87; }
+[data-widget-section="1"] .border2 { border-color: #5c93a3; }
+[data-widget-section="1"] .border3 { border-color: #81b9c0; }
+[data-widget-section="1"] .border4 { border-color: #99d3d3; }
+[data-widget-section="1"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="1"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="1"] .borderHighlight { border-color: #9f1447; }
+/* Finance */
+[data-widget-section="2"] .color0 { color: #1f5373; }
+[data-widget-section="2"] .color1 { color: #386d87; }
+[data-widget-section="2"] .color2 { color: #5c93a3; }
+[data-widget-section="2"] .color3 { color: #81b9c0; }
+[data-widget-section="2"] .color4 { color: #99d3d3; }
+[data-widget-section="2"] .color5 { color: #BFE4E4; }
+[data-widget-section="2"] .color6 { color: #e5f4f4; }
+[data-widget-section="2"] .colorHighlight { color: #9f1447; }
+[data-widget-section="2"] .background0 { background-color: #1f5373; }
+[data-widget-section="2"] .background1 { background-color: #386d87; }
+[data-widget-section="2"] .background2 { background-color: #5c93a3; }
+[data-widget-section="2"] .background3 { background-color: #81b9c0; }
+[data-widget-section="2"] .background4 { background-color: #99d3d3; }
+[data-widget-section="2"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="2"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="2"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="2"] .border0 { border-color: #1f5373; }
+[data-widget-section="2"] .border1 { border-color: #386d87; }
+[data-widget-section="2"] .border2 { border-color: #5c93a3; }
+[data-widget-section="2"] .border3 { border-color: #81b9c0; }
+[data-widget-section="2"] .border4 { border-color: #99d3d3; }
+[data-widget-section="2"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="2"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="2"] .borderHighlight { border-color: #9f1447; }
+/* Comment */
+[data-widget-section="3"] .color0 { color: #1f5373; }
+[data-widget-section="3"] .color1 { color: #386d87; }
+[data-widget-section="3"] .color2 { color: #5c93a3; }
+[data-widget-section="3"] .color3 { color: #81b9c0; }
+[data-widget-section="3"] .color4 { color: #99d3d3; }
+[data-widget-section="3"] .color5 { color: #BFE4E4; }
+[data-widget-section="3"] .color6 { color: #e5f4f4; }
+[data-widget-section="3"] .colorHighlight { color: #9f1447; }
+[data-widget-section="3"] .background0 { background-color: #1f5373; }
+[data-widget-section="3"] .background1 { background-color: #386d87; }
+[data-widget-section="3"] .background2 { background-color: #5c93a3; }
+[data-widget-section="3"] .background3 { background-color: #81b9c0; }
+[data-widget-section="3"] .background4 { background-color: #99d3d3; }
+[data-widget-section="3"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="3"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="3"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="3"] .border0 { border-color: #1f5373; }
+[data-widget-section="3"] .border1 { border-color: #386d87; }
+[data-widget-section="3"] .border2 { border-color: #5c93a3; }
+[data-widget-section="3"] .border3 { border-color: #81b9c0; }
+[data-widget-section="3"] .border4 { border-color: #99d3d3; }
+[data-widget-section="3"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="3"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="3"] .borderHighlight { border-color: #9f1447; }
+/* Culture */
+[data-widget-section="4"] .color0 { color: #9f1447; }
+[data-widget-section="4"] .color1 { color: #b13d49; }
+[data-widget-section="4"] .color2 { color: #c66246; }
+[data-widget-section="4"] .color3 { color: #dc8738; }
+[data-widget-section="4"] .color4 { color: #f5ae0c; }
+[data-widget-section="4"] .color5 { color: #FFCC67; }
+[data-widget-section="4"] .color6 { color: #F5E7EC; }
+[data-widget-section="4"] .colorHighlight { color: #009191; }
+[data-widget-section="4"] .background0 { background-color: #9f1447; }
+[data-widget-section="4"] .background1 { background-color: #b13d49; }
+[data-widget-section="4"] .background2 { background-color: #c66246; }
+[data-widget-section="4"] .background3 { background-color: #dc8738; }
+[data-widget-section="4"] .background4 { background-color: #f5ae0c; }
+[data-widget-section="4"] .background5 { background-color: #FFCC67; }
+[data-widget-section="4"] .background6 { background-color: #F5E7EC; }
+[data-widget-section="4"] .backgroundHighlight { background-color: #009191; }
+[data-widget-section="4"] .border0 { border-color: #9f1447; }
+[data-widget-section="4"] .border1 { border-color: #b13d49; }
+[data-widget-section="4"] .border2 { border-color: #c66246; }
+[data-widget-section="4"] .border3 { border-color: #dc8738; }
+[data-widget-section="4"] .border4 { border-color: #f5ae0c; }
+[data-widget-section="4"] .border5 { border-color: #FFCC67; }
+[data-widget-section="4"] .border6 { border-color: #F5E7EC; }
+[data-widget-section="4"] .borderHighlight { border-color: #009191; }
+/* Travel */
+[data-widget-section="5"] .color0 { color: #1f5373; }
+[data-widget-section="5"] .color1 { color: #386d87; }
+[data-widget-section="5"] .color2 { color: #5c93a3; }
+[data-widget-section="5"] .color3 { color: #81b9c0; }
+[data-widget-section="5"] .color4 { color: #99d3d3; }
+[data-widget-section="5"] .color5 { color: #BFE4E4; }
+[data-widget-section="5"] .color6 { color: #e5f4f4; }
+[data-widget-section="5"] .colorHighlight { color: #9f1447; }
+[data-widget-section="5"] .background0 { background-color: #1f5373; }
+[data-widget-section="5"] .background1 { background-color: #386d87; }
+[data-widget-section="5"] .background2 { background-color: #5c93a3; }
+[data-widget-section="5"] .background3 { background-color: #81b9c0; }
+[data-widget-section="5"] .background4 { background-color: #99d3d3; }
+[data-widget-section="5"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="5"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="5"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="5"] .border0 { border-color: #1f5373; }
+[data-widget-section="5"] .border1 { border-color: #386d87; }
+[data-widget-section="5"] .border2 { border-color: #5c93a3; }
+[data-widget-section="5"] .border3 { border-color: #81b9c0; }
+[data-widget-section="5"] .border4 { border-color: #99d3d3; }
+[data-widget-section="5"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="5"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="5"] .borderHighlight { border-color: #9f1447; }
+/* Lifestyle */
+[data-widget-section="6"] .color0 { color: #1f5373; }
+[data-widget-section="6"] .color1 { color: #386d87; }
+[data-widget-section="6"] .color2 { color: #5c93a3; }
+[data-widget-section="6"] .color3 { color: #81b9c0; }
+[data-widget-section="6"] .color4 { color: #99d3d3; }
+[data-widget-section="6"] .color5 { color: #BFE4E4; }
+[data-widget-section="6"] .color6 { color: #e5f4f4; }
+[data-widget-section="6"] .colorHighlight { color: #9f1447; }
+[data-widget-section="6"] .background0 { background-color: #1f5373; }
+[data-widget-section="6"] .background1 { background-color: #386d87; }
+[data-widget-section="6"] .background2 { background-color: #5c93a3; }
+[data-widget-section="6"] .background3 { background-color: #81b9c0; }
+[data-widget-section="6"] .background4 { background-color: #99d3d3; }
+[data-widget-section="6"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="6"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="6"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="6"] .border0 { border-color: #1f5373; }
+[data-widget-section="6"] .border1 { border-color: #386d87; }
+[data-widget-section="6"] .border2 { border-color: #5c93a3; }
+[data-widget-section="6"] .border3 { border-color: #81b9c0; }
+[data-widget-section="6"] .border4 { border-color: #99d3d3; }
+[data-widget-section="6"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="6"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="6"] .borderHighlight { border-color: #9f1447; }
+/* Women */
+[data-widget-section="7"] .color0 { color: #1f5373; }
+[data-widget-section="7"] .color1 { color: #386d87; }
+[data-widget-section="7"] .color2 { color: #5c93a3; }
+[data-widget-section="7"] .color3 { color: #81b9c0; }
+[data-widget-section="7"] .color4 { color: #99d3d3; }
+[data-widget-section="7"] .color5 { color: #BFE4E4; }
+[data-widget-section="7"] .color6 { color: #e5f4f4; }
+[data-widget-section="7"] .colorHighlight { color: #9f1447; }
+[data-widget-section="7"] .background0 { background-color: #1f5373; }
+[data-widget-section="7"] .background1 { background-color: #386d87; }
+[data-widget-section="7"] .background2 { background-color: #5c93a3; }
+[data-widget-section="7"] .background3 { background-color: #81b9c0; }
+[data-widget-section="7"] .background4 { background-color: #99d3d3; }
+[data-widget-section="7"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="7"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="7"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="7"] .border0 { border-color: #1f5373; }
+[data-widget-section="7"] .border1 { border-color: #386d87; }
+[data-widget-section="7"] .border2 { border-color: #5c93a3; }
+[data-widget-section="7"] .border3 { border-color: #81b9c0; }
+[data-widget-section="7"] .border4 { border-color: #99d3d3; }
+[data-widget-section="7"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="7"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="7"] .borderHighlight { border-color: #9f1447; }
+/* Luxury */
+[data-widget-section="8"] .color0 { color: #1f5373; }
+[data-widget-section="8"] .color1 { color: #386d87; }
+[data-widget-section="8"] .color2 { color: #5c93a3; }
+[data-widget-section="8"] .color3 { color: #81b9c0; }
+[data-widget-section="8"] .color4 { color: #99d3d3; }
+[data-widget-section="8"] .color5 { color: #BFE4E4; }
+[data-widget-section="8"] .color6 { color: #e5f4f4; }
+[data-widget-section="8"] .colorHighlight { color: #9f1447; }
+[data-widget-section="8"] .background0 { background-color: #1f5373; }
+[data-widget-section="8"] .background1 { background-color: #386d87; }
+[data-widget-section="8"] .background2 { background-color: #5c93a3; }
+[data-widget-section="8"] .background3 { background-color: #81b9c0; }
+[data-widget-section="8"] .background4 { background-color: #99d3d3; }
+[data-widget-section="8"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="8"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="8"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="8"] .border0 { border-color: #1f5373; }
+[data-widget-section="8"] .border1 { border-color: #386d87; }
+[data-widget-section="8"] .border2 { border-color: #5c93a3; }
+[data-widget-section="8"] .border3 { border-color: #81b9c0; }
+[data-widget-section="8"] .border4 { border-color: #99d3d3; }
+[data-widget-section="8"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="8"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="8"] .borderHighlight { border-color: #9f1447; }
+/* Tech */
+[data-widget-section="9"] .color0 { color: #1f5373; }
+[data-widget-section="9"] .color1 { color: #386d87; }
+[data-widget-section="9"] .color2 { color: #5c93a3; }
+[data-widget-section="9"] .color3 { color: #81b9c0; }
+[data-widget-section="9"] .color4 { color: #99d3d3; }
+[data-widget-section="9"] .color5 { color: #BFE4E4; }
+[data-widget-section="9"] .color6 { color: #e5f4f4; }
+[data-widget-section="9"] .colorHighlight { color: #9f1447; }
+[data-widget-section="9"] .background0 { background-color: #1f5373; }
+[data-widget-section="9"] .background1 { background-color: #386d87; }
+[data-widget-section="9"] .background2 { background-color: #5c93a3; }
+[data-widget-section="9"] .background3 { background-color: #81b9c0; }
+[data-widget-section="9"] .background4 { background-color: #99d3d3; }
+[data-widget-section="9"] .background5 { background-color: #BFE4E4; }
+[data-widget-section="9"] .background6 { background-color: #e5f4f4; }
+[data-widget-section="9"] .backgroundHighlight { background-color: #9f1447; }
+[data-widget-section="9"] .border0 { border-color: #1f5373; }
+[data-widget-section="9"] .border1 { border-color: #386d87; }
+[data-widget-section="9"] .border2 { border-color: #5c93a3; }
+[data-widget-section="9"] .border3 { border-color: #81b9c0; }
+[data-widget-section="9"] .border4 { border-color: #99d3d3; }
+[data-widget-section="9"] .border5 { border-color: #BFE4E4; }
+[data-widget-section="9"] .border6 { border-color: #e5f4f4; }
+[data-widget-section="9"] .borderHighlight { border-color: #9f1447; }
+
+
+/* viewport */
+@-ms-viewport {
+	width: device-width;
+	zoom: 1;
+	min-zoom: 1;
+	user-zoom: fixed;
+}
+@viewport {
+	width: device-width;
+	zoom: 1;
+	min-zoom: 1;
+	user-zoom: fixed;
+}
+
+
+/* Basic reset */
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+img {
+	-ms-interpolation-mode: bicubic;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+table, thead, tbody, tfoot, tr {
+	font-size: 1em;
+}
+template {
+	display: none;
+}
+
+
+/* Specify font */
+.widgetFontBody, html {
+	font-family: 'widgetFontBody', sans-serif;
+}
+.widgetFontHeading, h1, h2, h3, header {
+	font-family: 'widgetFontHeading', sans-serif;
+}
+
+
+/* General styles */
+html, body {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+html {
+	background: #ffffff;
+	color: #222222;
+	font-size: 100px;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	-webkit-font-variant-ligatures: common-ligatures;
+	font-variant-ligatures: common-ligatures;
+	-webkit-font-feature-settings: 'kern';
+	font-feature-settings: 'kern';
+	font-kerning: normal;
+}
+h1, h2, h3 {
+	font-size: 0.5rem;
+}
+p, ul, ol, dt, dd, th, td {
+	font-size: 0.25rem;
+}
+ul, ol {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	text-align: left;
+	vertical-align: top;
+}
+a {
+	color: inherit;
+}
+a[href=""], a:not([href]) {
+	text-decoration: inherit !important;
+	color: inherit !important;
+	cursor: text !important;
+}
+pre {
+	font-family: 'Monaco', 'Menlo', 'Lucida Console', 'Courier New', monospaced;
+	white-space: pre-wrap;
+	word-wrap: normal;
+	overflow-wrap: normal;
+}
+
+
+/* hide stuff */
+html:not(.cms) *[data-cms~="hideable"][data-widget-hidden="1"], *[data-cms-insert] {
+	display: none;
+}
+
+
+/* ensure widget can't overspill */
+#widget {
+	background: #ffffff;
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+}
+/* allow scrolling if not framed */
+html.widgetUnframed {
+	overflow-y: auto;
+}
+html.widgetUnframed #widget {
+	position: relative;
+}

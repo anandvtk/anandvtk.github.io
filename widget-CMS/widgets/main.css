@@ -1,0 +1,549 @@
+/* general styles */
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 0.3rem;
+	padding: 0.2rem 0.12rem 0.16rem 0.12rem;
+	font-family: 'widgetFontBody', sans-serif;
+}
+p, th, td, ul, ol, dt, dd {
+	font-size: 1.5em;
+}
+dt, dd {
+	font-style: normal;
+	font-weight: normal;
+}
+cite {
+	font-style: normal;
+}
+@media (min-width: 500px) {
+	h1 {
+		font-size: 0.4rem;
+	}
+}
+
+
+/* overall box layout/sizing */
+#widget {
+	max-width: 640px;
+}
+main {
+	overflow: hidden;
+	width: 6.4rem;
+	font-size: 0.2rem;
+}
+section {
+	width: 6.4rem;
+	height: 8rem;
+	margin: 0.05rem 0 0 0;
+}
+@media (min-width: 500px) {
+	#widget {
+		max-width: 1285px;
+	}
+	main {
+		width: 12.85rem;
+	}
+	section {
+		clear: left;
+		float: left;
+	}
+	section:nth-child(2n) {
+		clear: right;
+		float: right;
+	}
+}
+
+
+/* section containers */
+section {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+section > div {
+	padding: 0.28rem 0.12rem 0.7rem 0.12rem;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+section > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.15;
+}
+
+
+/* sizing options */
+section.small {
+	font-size: 0.75em;
+}
+section.large {
+	font-size: 1.33em;
+}
+
+
+/* headers */
+header {
+	padding: 0 0 0.1rem 0;
+	min-height: 1.4rem;
+}
+header h2 {
+	font-size: 0.67rem;
+}
+header p {
+	font-size: 0.35rem;
+	text-transform: uppercase;
+	padding-top: 0.03rem;
+}
+
+
+/* footers */
+footer {
+	padding: 0 0.12rem 0.24rem 0;
+	text-align: right;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+footer p {
+	font-size: 0.3rem;
+}
+
+
+/* table */
+section.sectionTable > div {
+	padding-left: 0;
+	padding-right: 0;
+}
+section.sectionTable header {
+	padding-left: 0.12rem;
+	padding-right: 0.12rem;
+}
+section.sectionTable table {
+	width: 100%;
+	border-collapse: collapse;
+}
+section.sectionTable th, section.sectionTable td {
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #222222;
+	border-bottom: 1px solid #222222;
+	padding: 0.325em 0.5em 0.25em 0.7em;
+	background: #ffffff;
+}
+section.sectionTable table.pad th, section.sectionTable table.pad td {
+	padding: 0.625em 0.5em 0.55em 0.7em;
+}
+
+
+/* picture */
+section.sectionPicture > div {
+	position: static;
+}
+section.sectionPicture img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+section.sectionPicture figcaption {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0.8em 0.6em 1em 0.6em;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+}
+section.sectionPicture figcaption p span + span {
+	margin-left: 0.2rem;
+}
+
+
+/* quote */
+section.sectionQuote > div {
+	padding-bottom: 0.4rem;
+}
+section.sectionQuote blockquote {
+	color: #ffffff;
+	font-family: 'widgetFontHeading', sans-serif;
+	margin: 0 0.15rem 0 0.15rem;
+	padding: 0.45rem 0.3rem 0.4rem 0.3rem;
+	font-weight: bold;
+	position: relative;
+	font-size: 2.75em;
+	line-height: 1.2;
+}
+section.sectionQuote blockquote span {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	left: 0.5rem;
+	bottom: -0.5rem;
+	-webkit-transform: scale(0.75, 1) rotate(45deg);
+	-moz-transform: scale(0.75, 1) rotate(45deg);
+	-ms-transform: scale(0.75, 1) rotate(45deg);
+	transform: scale(0.75, 1) rotate(45deg);
+}
+section.sectionQuote p {
+	font-size: 1em;
+	position: relative;
+	margin: 0 0 0.5em 0;
+}
+section.sectionQuote cite {
+	display: block;
+	font-size: 2.5em;
+	font-family: 'widgetFontHeading', sans-serif;
+	font-style: italic;
+	text-align: left;
+	margin: 0.3rem 0.15rem 0 1.75rem;
+}
+
+
+/* facts */
+section.sectionFacts dt {
+	font-weight: bold;
+	font-size: 6.25em;
+	font-family: 'widgetFontHeading', sans-serif;
+}
+section.sectionFacts dl {
+	padding: 5em 0 0 0;
+}
+section.sectionFacts header + dl {
+	padding: 0;
+}
+section.sectionFacts dl dt {
+	padding: 0.5em 0 0.05em 0;
+}
+section.sectionFacts dl[data-widget-count="2"] dt {
+	padding-top: 0.3em;
+}
+section.sectionFacts dl[data-widget-count="3"] dt {
+	padding-top: 0.1em;
+}
+section.sectionFacts header[data-widget-hidden="1"] + dl dt {
+	padding-top: 1.4em;
+}
+section.sectionFacts header[data-widget-hidden="1"] + dl[data-widget-count="2"] dt {
+	padding-top: 0.7em;
+}
+section.sectionFacts header[data-widget-hidden="1"] + dl[data-widget-count="3"] dt {
+	padding-top: 0.4em;
+}
+section.sectionFacts dd {
+	font-weight: bold;
+	font-size: 1.875em;
+}
+
+
+/* bar chart */
+section.sectionBar dl {
+	height: 4.6rem;
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #222222;
+}
+section.sectionBar dt {
+	position: absolute;
+	top: 4.7rem;
+	left: 0;
+	font-weight: bold;
+}
+section.sectionBar dd {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #ffffff;
+	font-size: 2.5em;
+	font-weight: bold;
+	overflow: hidden;
+	font-family: 'widgetFontHeading', sans-serif;
+}
+section.sectionBar dd span {
+	display: block;
+	padding: 0.1rem 0 0.1rem 0;
+}
+section.sectionBar dd.sectionBarOutside {
+	overflow: visible;
+}
+section.sectionBar dd.sectionBarOutside span {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	color: #222222;
+}
+/* 2 bars */
+section.sectionBar dl[data-widget-count="2"] dt, section.sectionBar dl[data-widget-count="2"] dd {
+	width: 48% !important;
+}
+section.sectionBar dl[data-widget-count="2"] dt:nth-child(3), section.sectionBar dl[data-widget-count="2"] dd:nth-child(4) {
+	left: 52%;
+}
+/* 3 bars */
+section.sectionBar dl[data-widget-count="3"] dt, section.sectionBar dl[data-widget-count="3"] dd {
+	width: 32% !important;
+}
+section.sectionBar dl[data-widget-count="3"] dt:nth-child(3), section.sectionBar dl[data-widget-count="3"] dd:nth-child(4) {
+	left: 34%;
+}
+section.sectionBar dl[data-widget-count="3"] dt:nth-child(5), section.sectionBar dl[data-widget-count="3"] dd:nth-child(6) {
+	left: 68%;
+}
+/* 4 bars */
+section.sectionBar dl[data-widget-count="4"] dt, section.sectionBar dl[data-widget-count="4"] dd {
+	width: 23.5% !important;
+}
+section.sectionBar dl[data-widget-count="4"] dt:nth-child(3), section.sectionBar dl[data-widget-count="4"] dd:nth-child(4) {
+	left: 25.5%;
+}
+section.sectionBar dl[data-widget-count="4"] dt:nth-child(5), section.sectionBar dl[data-widget-count="4"] dd:nth-child(6) {
+	left: 51%;
+}
+section.sectionBar dl[data-widget-count="4"] dt:nth-child(7), section.sectionBar dl[data-widget-count="4"] dd:nth-child(8) {
+	left: 76.5%;
+}
+/* 5 bars */
+section.sectionBar dl[data-widget-count="5"] dt {
+	font-size: 1.25em;
+}
+section.sectionBar dl[data-widget-count="5"] dd {
+	font-size: 1.75em;
+}
+section.sectionBar dl[data-widget-count="5"] dt, section.sectionBar dl[data-widget-count="5"] dd {
+	width: 19% !important;
+}
+section.sectionBar dl[data-widget-count="5"] dt:nth-child(3), section.sectionBar dl[data-widget-count="5"] dd:nth-child(4) {
+	left: 20.25%;
+}
+section.sectionBar dl[data-widget-count="5"] dt:nth-child(5), section.sectionBar dl[data-widget-count="5"] dd:nth-child(6) {
+	left: 40.5%;
+}
+section.sectionBar dl[data-widget-count="5"] dt:nth-child(7), section.sectionBar dl[data-widget-count="5"] dd:nth-child(8) {
+	left: 60.75%;
+}
+section.sectionBar dl[data-widget-count="5"] dt:nth-child(9), section.sectionBar dl[data-widget-count="5"] dd:nth-child(10) {
+	left: 81%;
+}
+
+
+/* horizontal bar chart */
+section.sectionBarHoriz dl {
+	height: 5rem;
+	margin: 0.5rem auto 0 auto;
+	width: 90%;
+	position: relative;
+	border-left: 1px solid #222222;
+	text-align: left;
+}
+section.sectionBarHoriz dt {
+	position: absolute;
+	margin: -0.38rem 0 0 0;
+	top: 0;
+	left: 0.35rem;
+	font-weight: bold;
+	white-space: nowrap;
+	font-size: 1.75em;
+}
+section.sectionBarHoriz dd {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	font-size: 2.5em;
+	font-family: 'widgetFontHeading', sans-serif;
+}
+section.sectionBarHoriz dd span {
+	position: absolute;
+	color: #ffffff;
+	font-weight: bold;
+	top: 50%;
+	left: 0.35rem;
+	margin: -0.45em 0 0 0;
+}
+section.sectionBarHoriz dd.sectionBarOutside {
+	overflow: visible;
+}
+section.sectionBarHoriz dd.sectionBarOutside span {
+	left: 100%;
+	color: #222222;
+	margin-left: 0.15rem;
+}
+/* 2 bars */
+section.sectionBarHoriz dl[data-widget-count="2"] dt, section.sectionBarHoriz dl[data-widget-count="2"] dd {
+	height: 42% !important;
+}
+section.sectionBarHoriz dl[data-widget-count="2"] dt:nth-child(3), section.sectionBarHoriz dl[data-widget-count="2"] dd:nth-child(4) {
+	top: 58%;
+}
+/* 3 bars */
+section.sectionBarHoriz dl[data-widget-count="3"] dt, section.sectionBarHoriz dl[data-widget-count="3"] dd {
+	height: 24% !important;
+}
+section.sectionBarHoriz dl[data-widget-count="3"] dt:nth-child(3), section.sectionBarHoriz dl[data-widget-count="3"] dd:nth-child(4) {
+	top: 38%;
+}
+section.sectionBarHoriz dl[data-widget-count="3"] dt:nth-child(5), section.sectionBarHoriz dl[data-widget-count="3"] dd:nth-child(6) {
+	top: 76%;
+}
+/* 4 bars */
+section.sectionBarHoriz dl[data-widget-count="4"] dt, section.sectionBarHoriz dl[data-widget-count="4"] dd {
+	height: 16% !important;
+}
+section.sectionBarHoriz dl[data-widget-count="4"] dt:nth-child(3), section.sectionBarHoriz dl[data-widget-count="4"] dd:nth-child(4) {
+	top: 28%;
+}
+section.sectionBarHoriz dl[data-widget-count="4"] dt:nth-child(5), section.sectionBarHoriz dl[data-widget-count="4"] dd:nth-child(6) {
+	top: 56%;
+}
+section.sectionBarHoriz dl[data-widget-count="4"] dt:nth-child(7), section.sectionBarHoriz dl[data-widget-count="4"] dd:nth-child(8) {
+	top: 84%;
+}
+/* 5 bars */
+section.sectionBarHoriz dl[data-widget-count="5"] dt, section.sectionBarHoriz dl[data-widget-count="5"] dd {
+	height: 12% !important;
+}
+section.sectionBarHoriz dl[data-widget-count="5"] dt:nth-child(3), section.sectionBarHoriz dl[data-widget-count="5"] dd:nth-child(4) {
+	top: 22%;
+}
+section.sectionBarHoriz dl[data-widget-count="5"] dt:nth-child(5), section.sectionBarHoriz dl[data-widget-count="5"] dd:nth-child(6) {
+	top: 44%;
+}
+section.sectionBarHoriz dl[data-widget-count="5"] dt:nth-child(7), section.sectionBarHoriz dl[data-widget-count="5"] dd:nth-child(8) {
+	top: 66%;
+}
+section.sectionBarHoriz dl[data-widget-count="5"] dt:nth-child(9), section.sectionBarHoriz dl[data-widget-count="5"] dd:nth-child(10) {
+	top: 88%;
+}
+
+
+/* pie chart */
+.sectionPie figure > ul {
+	position: relative;
+	width: 4.4rem;
+	height: 4.4rem;
+	margin: 0 auto 0 auto;
+	border-radius: 2.2rem;
+	overflow: hidden;
+	background: #ffffff;
+}
+.sectionPie figure > ul:after {
+	content: '';
+	width: 0.444rem;
+	height: 0.444rem;
+	border-radius: 0.222rem;
+	background: #ffffff;
+	position: absolute;
+	left: 2.2rem;
+	top: 2.2rem;
+	margin: -0.222rem 0 0 -0.222rem;
+}
+.sectionPie figure > ul li {
+	position: absolute;
+	width: 2.2rem;
+	height: 4.4rem;
+	overflow: hidden;
+	left: 2.2rem;
+	-moz-transform-origin:left center;
+	-ms-transform-origin:left center;
+	-webkit-transform-origin:left center;
+	transform-origin:left center;
+}
+.sectionPie figure > ul li.big {
+	width: 4.4rem;
+	height: 4.4rem;
+	left: 0;
+	-moz-transform-origin:center center;
+	-ms-transform-origin:center center;
+	-webkit-transform-origin:center center;
+	transform-origin:center center;
+}
+.sectionPie figure > ul li span:first-child {
+	content: "";
+	position: absolute;
+	width: 2.2rem;
+	height: 4.4rem;
+	left: -2.2rem;
+	-moz-transform-origin: right center;
+	-ms-transform-origin: right center;
+	-webkit-transform-origin: right center;
+	transform-origin: right center;
+}
+.sectionPie figure > ul li span:first-child:before {
+	content: '';
+	width: 2px;
+	height: 50%;
+	position: absolute;
+	top: 0;
+	right: -1px;
+	background: #ffffff;
+}
+.sectionPie figure > ul li:last-child span:first-child:before {
+	width: 1px;
+	right: 0;
+}
+.sectionPie figure > ul li.big span:first-child {
+	left: 0;
+}
+.sectionPie figure > ul li span + span {
+	display: none;
+}
+.sectionPie figure > ul li.big span + span {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 2.2rem;
+	height: 4.4rem;
+	left: 2.2rem;
+}
+.sectionPie figcaption li {
+	display: inline-block;
+	margin: 0.5em 0.5em 0 0;
+}
+.sectionPie figcaption li strong {
+	display: inline-block;
+	color: #ffffff;
+	padding: 0.1em 0.1em 0 0.1em;
+	min-height: 1em;
+	min-width: 1em;
+	vertical-align: middle;
+	line-height: 1;
+	margin: 0 0.2em 0 0;
+}
+.sectionPie dl {
+	position: absolute;
+	left: 1rem;
+	top: 2rem;
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+
+/* text */
+.sectionText > div {
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	text-align: left;
+}
+.sectionText h2 {
+	font-size: 2.5em;
+}
+.sectionText h2 + div {
+	font-size: 1.875em;
+	line-height: 1.4;
+	padding: 0.25rem 0 0 0;
+}
+.sectionText h2 + div p {
+	font-size: 1em;
+	margin: 0 0 0.8em 0;
+}
