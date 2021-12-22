@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: anandvtk.github.io
+  annotations:
+    github.com/project-slug: anandvtk/anandvtk.github.io
+spec:
+  type: other
+  lifecycle: unknown
+  owner: anandvtk
